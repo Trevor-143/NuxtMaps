@@ -4,7 +4,7 @@
             
             <div class="maps">
                 <GoogleMap 
-                    :api-key="API_KEY"
+                    api-key="AIzaSyCEnh5wG-ap7oAzRcWBPo5geP4GWM43nKo"
                     :center="center"
                     :zoom="zoom"
                     class="placeMaps"
