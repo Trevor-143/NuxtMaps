@@ -4,7 +4,7 @@
             
             <div class="maps">
                 <GoogleMap 
-                    api-key="AIzaSyCEnh5wG-ap7oAzRcWBPo5geP4GWM43nKo"
+                    :api-key="API_KEY"
                     :center="center"
                     :zoom="zoom"
                     class="placeMaps"
@@ -37,6 +37,9 @@
 <script setup>
 
     import { GoogleMap, MarkerCluster } from "vue3-google-map"
+
+    const config = useRuntimeConfig()
+    const API_KEY = config.public.GAK
 
     const Places = ref({
         soroti: {
